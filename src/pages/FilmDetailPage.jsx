@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { useParams } from 'react-router-dom';
+import { useParams, Link } from 'react-router-dom';
 
 const FilmDetail = () => {
     const [film, setFilm] = useState(null);
@@ -23,6 +23,9 @@ const FilmDetail = () => {
             <p><strong>Producer:</strong> {film.producer}</p>
             <p><strong>Release Date:</strong> {film.release_date}</p>
             <p><strong>Rotten Tomatoes Score:</strong> {film.rt_score}</p>
+            
+            {/* Link to return to the FilmPage */}
+            <Link to="/films" className="btn btn-secondary">Return to Films</Link>
         </div>
     );
 };

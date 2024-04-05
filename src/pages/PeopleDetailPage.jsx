@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import { useParams } from 'react-router-dom';
+import { useParams, Link } from 'react-router-dom';
 
-const PeopleDetail = () => { // Change this line
+const PeopleDetail = () => {
     const [person, setPerson] = useState(null);
     const { personid } = useParams(); // Get the person id from URL parameters
 
@@ -22,6 +22,9 @@ const PeopleDetail = () => { // Change this line
             <p><strong>Age:</strong> {person.age}</p>
             <p><strong>Eye Color:</strong> {person.eye_color}</p>
             <p><strong>Hair Color:</strong> {person.hair_color}</p>
+
+            {/* Link to return to the PeoplePage */}
+            <Link to="/people" className="btn btn-secondary">Return to People</Link>
         </div>
     );
 };

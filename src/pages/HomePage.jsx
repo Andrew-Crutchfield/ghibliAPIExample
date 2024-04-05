@@ -1,5 +1,7 @@
+import React from 'react';
 import { Link } from "react-router-dom";
 import { Button, Container, Row, Col } from 'react-bootstrap';
+import ghibliImage from '../ghibli.png'; // Adjusted path
 
 const HomePage = () => {
     return (
@@ -14,6 +16,9 @@ const HomePage = () => {
                     <Link to='/people'>
                         <Button variant="secondary">View People</Button>
                     </Link>
+
+                    {/* Use the imported image */}
+                    <img src={ghibliImage} alt="Ghibli" className="mt-3" />
                 </Col>
             </Row>
         </Container>
@@ -21,22 +26,3 @@ const HomePage = () => {
 }
 
 export default HomePage;
-
-
-
-
-// import { Link } from "react-router-dom";
-
-// const HomePage = () => {
-    
-
-
-
-//     return (
-//         <div>
-            
-//         </div>
-//     );
-// }
-
-// export default HomePage;
