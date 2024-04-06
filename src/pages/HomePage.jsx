@@ -1,7 +1,7 @@
 import React from 'react';
-import { Link } from "react-router-dom";
+import { Link } from 'react-router-dom';
 import { Button, Container, Row, Col } from 'react-bootstrap';
-import ghibliImage from '../ghibli.png'; // Adjusted path
+import ghibliImage from '../../ghibli.png'; 
 
 const HomePage = () => {
     return (
