@@ -1,7 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Button, Container, Row, Col } from 'react-bootstrap';
-import ghibliImage from '../../ghibli.png'; 
 
 const HomePage = () => {
     return (
@@ -18,7 +17,7 @@ const HomePage = () => {
                     </Link>
 
                     {/* Use the imported image */}
-                    <img src={ghibliImage} alt="Ghibli" className="mt-3" />
+                    <img src="images/ghibli.png" alt="Ghibli" className="mt-3" />
                 </Col>
             </Row>
         </Container>
